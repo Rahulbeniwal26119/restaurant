@@ -15,7 +15,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand">Ristorante Con Fusion</a>
+            <a href="#" class="navbar-brand"> <img src="./image/img/logo.png" height="40px" width="40px" alt="" class="img-responsive"> </a>
             <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a href="./index.html" class="nav-link"> <span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -34,7 +34,10 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae maxime alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi quaerat numquam quod illum facere ad?</p>
                 </div>
                 <div class="col-12 col-sm red">
-                    👋
+                    <div class="row">
+                        <div class="col-7 col-lg-4 col-sm-5"> <img src="./image/img/logo.png" alt=""> </div>
+                        <div class="offset-sm-4 col-3  col-lg-4 offset-col-2 col-sm-3">  <button type="button" class="btn btn-warning text-dark"> <a href="#card"> <span class="blacktext"> Reserve Table </span></a></button> </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,9 +47,14 @@
             <div class="col-12 order-sm-last col-sm-4 col-md-3 green">
                 <h3>Out Lipmacking Culinary Creations</h3>
             </div>
-            <div class="red  order-sm-first col col-sm col-md">
-            <h2>Utahppizza</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae maxime alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi quaerat numquam quod illum facere ad?</p>
+            <div class="col order-sm-first col col-sm col-md">
+                <div class="media">
+                    <img src="./image/img/uthappizza.png" alt="Utahppizza" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Utahppizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$10</span> </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae maxime alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi quaerat numquam quod illum facere ad?</p>
+                    </div>
+                </div>
         </div>
         </div>
         <div  class="row row-content align-items-center">
@@ -54,8 +62,15 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="red col col-sm col-md"> 
-                <h2>Weekened Grand Buffet</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum dolorum odit eligendi deleniti repellendus modi tempore provident aliquid possimus? Eaque doloribus ex, in similique ut perferendis minus dignissimos nam!</p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekened Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum dolorum odit eligendi deleniti repellendus modi tempore provident aliquid possimus? Eaque doloribus ex, in similique ut perferendis minus dignissimos nam!</p>
+                    </div>
+                    <div class="media-right">
+                        <img src="./image/img/buffet.png" alt="" class="mr-3 img-thumbnail d-relative align-self-center">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row row-content align-items-center">
@@ -63,9 +78,71 @@
                 <h3>Meet our Culinary Specialist</h3>
             </div>
             <div class="red col col-sm col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executibe Chef</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium rerum dolorem numquam libero quisquam fugit nesciunt placeat porro nemo. Eius, a. Nostrum, consectetur distinctio vero suscipit quis nobis eligendi molestiae.</p>
+                <div class="media">
+                    <img src="./image/img/alberto.png" class="d-flex mr-3 img-thumnail align-self-center" alt="alberto">
+                    <div class="media-body">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executibe Chef</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium rerum dolorem numquam libero quisquam fugit nesciunt placeat porro nemo. Eius, a. Nostrum, consectetur distinctio vero suscipit quis nobis eligendi molestiae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-10 margin-auto-center">
+            <div class="card" id="card">
+                <h3 class="card-header bg-warning text-white">Reserve A table</h3>
+                <div class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-lg-2 col-sm-2   col-12">
+                                <label for="guest"> <strong> Number Of Guest </strong></label>
+                            </div>
+                            <div class="form-group  col-sm-8 col-12">
+                        <div class="form-check form-check-inline">
+                            <input id="check1" type="radio" class="form-check-input" name="radio-btn" value="1">
+                            <label class="form-check-label" for="check1">1</label>
+                        </div>
+                        <div class=" form-check-inline">
+                            <input type="radio" class="" name="radio-btn"  id="check2">
+                            <label for="check2" class="form-check-label">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radio-btn"  id="check3">
+                            <label for="check3" class="form-check-label">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radio-btn"  id="check4">
+                            <label for="check4" class="form-check-label">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radio-btn"  id="check5">
+                            <label for="check5" class="form-check-label">5</label>
+                        </div>
+                        <div class="form-check disabled form-check-inline">
+                            <input type="radio" class="form-check-input" name="radio-btn"  id="check6">
+                            <label for="check6" class="form-check-label">6</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-lg-2 col-12"><strong>Date and Time</strong></label>
+                        <div class="col-sm-4 col-lg-2 col-6"  >
+                            <input type="text" class="form-control" placeholder="Date">
+                        </div>
+                        <div class="col-sm-4 col-6 col-lg-2">
+                            <input type="text" class="form-control" placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">
+                                Reserve
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
