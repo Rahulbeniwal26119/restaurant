@@ -61,3 +61,29 @@ background-color : #512da8;
 {
     margin-left: 8%;
 } */
+/* .carousel-div
+{
+    text-align: center;
+    background : red;
+}
+.carousel-item{
+    margin-top: 6rem;
+} */
+.carousel
+{
+    background-color: #512DA8;
+}
+.carousel-item
+{
+    height : 300px;
+    color : black;
+}
+.carousel-item img{
+    position: absolute;
+    top : 0;
+    left : 0;
+    min-height : 300px;
+}
+.carousel-caption{
+    color : #dddddd;
+}

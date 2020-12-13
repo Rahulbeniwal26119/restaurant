@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,72 +10,178 @@
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="navbar-brand"> <img src="./image/img/logo.png" height="40px" width="40px" alt="" class="img-responsive"> </a>
+            <a href="#" class="navbar-brand"> <img src="./image/img/logo.png" height="40px" width="40px" alt=""
+                    class="img-responsive"> </a>
             <div class="collapse navbar-collapse" id="Navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a href="./index.html" class="nav-link"> <span class="fa fa-home fa-lg"></span> Home</a></li>
-                <li class="nav-item"><a href="./aboutus.html" class="nav-link"> <span class="fa fa-info fa-lg"></span> About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> <span class="fa fa-list fa-lg"></span> Menu</a></li>
-                <li class="nav-item"><a href="./contactus.html" class="nav-link"> <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-            </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="./index.html" class="nav-link"> <span
+                                class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a href="./aboutus.html" class="nav-link"> <span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> <span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a href="./contactus.html" class="nav-link"> <span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="" data-toggle="modal" data-target="#loginModal">
+                        <div class="fa fa-sign-in"></div> Login
+                    </a>
+                </span>
+            </div>
         </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-ti">Login </h4>
+                    <button class="close" type="button" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="sr-only" for="email">Email</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                            <div class="offset-sm-1 form-group col-sm-4">
+                                <label for="sr-only" for="password">Password</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-12">
+                                <div class="form-check">
+                                    <input type="checkbox" for="remember" class="form-check-input">
+                                    <label for="remember" class="form-check-label">Remember Me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal"
+                                type="button">Cancel</button>
+                            <button class="btn btn-primary btn-sm ml-1" type="submit">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-</nav>
-    <header  class="jumbotron">
+    </div>
+    <header class="jumbotron">
         <div class="container">
             <div class="row  row-header">
                 <div class="col-12 col-sm-6 green">
                     <h1>Restorante Con Fusion</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae maxime alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi quaerat numquam quod illum facere ad?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae maxime
+                        alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi quaerat
+                        numquam quod illum facere ad?</p>
                 </div>
                 <div class="col-12 col-sm red">
                     <div class="row">
                         <div class="col-7 col-lg-4 col-sm-5"> <img src="./image/img/logo.png" alt=""> </div>
-                        <div class="offset-sm-4 col-3  col-lg-4 offset-col-2 col-sm-3">  <button type="button" class="btn btn-warning text-dark"> <a href="#card"> <span class="blacktext"> Reserve Table </span></a></button> </div>
+                        <div class="offset-sm-4 col-3  col-lg-4 offset-col-2 col-sm-3"> <button type="button"
+                                class="btn btn-warning text-dark">
+                                <a role="button" class="btn btn-block nav-link" href="#card" date-toggle="tooltip"
+                                    data-html="true" title="Or Call Us At <br><strong> +852 123456789</strong>"
+                                    data-placement="bottom"> <span class="blacktext"> Reserve Table </span></a></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <div class="container">
+        <div class="row row-content mt-5">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="./image/img/uthappizza.png" alt="" class="d-block img-fluid">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Utahppizza <span class="badge badge-danger">HOT</span> <span
+                                        class="badge badge-pill badge-secondary">$10</span> </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio
+                                    vitae maxime alias architecto sunt inventore deleniti, beatae consectetur saepe,
+                                    eos, libero nisi quaerat numquam quod illum facere ad?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/img/buffet.png" alt="" class="d-block img-flud">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Weekened Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum dolorum odit
+                                    eligendi deleniti repellendus modi tempore provident aliquid possimus? Eaque
+                                    doloribus ex, in similique ut perferendis minus dignissimos nam!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/img/alberto.png" alt="" class="d-block img-fluid">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Alberto Somayya</h2>
+                                <h4>Executibe Chef</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium rerum dolorem numquam libero quisquam fugit nesciunt placeat porro nemo. Eius, a. Nostrum, consectetur distinctio vero suscipit quis nobis eligendi molestiae.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a href="#mycarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="row row-content align-items-center">
             <div class="col-12 order-sm-last col-sm-4 col-md-3 green">
                 <h3>Out Lipmacking Culinary Creations</h3>
             </div>
             <div class="col order-sm-first col col-sm col-md">
                 <div class="media">
-                    <img src="./image/img/uthappizza.png" alt="Utahppizza" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <img src="./image/img/uthappizza.png" alt="Utahppizza"
+                        class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Utahppizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$10</span> </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae maxime alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi quaerat numquam quod illum facere ad?</p>
-                    </div>
-                </div>
-        </div>
-        </div>
-        <div  class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 green">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="red col col-sm col-md"> 
-                <div class="media">
-                    <div class="media-body">
-                        <h2>Weekened Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum dolorum odit eligendi deleniti repellendus modi tempore provident aliquid possimus? Eaque doloribus ex, in similique ut perferendis minus dignissimos nam!</p>
-                    </div>
-                    <div class="media-right">
-                        <img src="./image/img/buffet.png" alt="" class="mr-3 img-thumbnail d-relative align-self-center">
+                        <h2 class="mt-0">Utahppizza <span class="badge badge-danger">HOT</span> <span
+                                class="badge badge-pill badge-secondary">$10</span> </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore expedita distinctio vitae
+                            maxime alias architecto sunt inventore deleniti, beatae consectetur saepe, eos, libero nisi
+                            quaerat numquam quod illum facere ad?</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row row-content align-items-center">
-            <div  class="col-12 col-sm-4 order-sm-last col-md-3 green">
+            <div class="col-12 col-sm-4 col-md-3 green">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="red col col-sm col-md">
+                <div class="media">
+                    <div class="media-body">
+                        <img src="./image/img/buffet.png" class="d-flex ml-auto img-thumnail align-self-center" alt="alberto">
+                        <h2>Weekened Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum dolorum odit eligendi
+                            deleniti repellendus modi tempore provident aliquid possimus? Eaque doloribus ex, in
+                            similique ut perferendis minus dignissimos nam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3 green">
                 <h3>Meet our Culinary Specialist</h3>
             </div>
             <div class="red col col-sm col-md">
@@ -83,7 +190,9 @@
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
                         <h4>Executibe Chef</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium rerum dolorem numquam libero quisquam fugit nesciunt placeat porro nemo. Eius, a. Nostrum, consectetur distinctio vero suscipit quis nobis eligendi molestiae.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium rerum dolorem numquam
+                            libero quisquam fugit nesciunt placeat porro nemo. Eius, a. Nostrum, consectetur distinctio
+                            vero suscipit quis nobis eligendi molestiae.</p>
                     </div>
                 </div>
             </div>
@@ -98,53 +207,53 @@
                                 <label for="guest"> <strong> Number Of Guest </strong></label>
                             </div>
                             <div class="form-group  col-sm-8 col-12">
-                        <div class="form-check form-check-inline">
-                            <input id="check1" type="radio" class="form-check-input" name="radio-btn" value="1">
-                            <label class="form-check-label" for="check1">1</label>
+                                <div class="form-check form-check-inline">
+                                    <input id="check1" type="radio" class="form-check-input" name="radio-btn" value="1">
+                                    <label class="form-check-label" for="check1">1</label>
+                                </div>
+                                <div class=" form-check-inline">
+                                    <input type="radio" class="" name="radio-btn" id="check2">
+                                    <label for="check2" class="form-check-label">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="radio-btn" id="check3">
+                                    <label for="check3" class="form-check-label">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="radio-btn" id="check4">
+                                    <label for="check4" class="form-check-label">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="radio-btn" id="check5">
+                                    <label for="check5" class="form-check-label">5</label>
+                                </div>
+                                <div class="form-check disabled form-check-inline">
+                                    <input type="radio" class="form-check-input" name="radio-btn" id="check6">
+                                    <label for="check6" class="form-check-label">6</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class=" form-check-inline">
-                            <input type="radio" class="" name="radio-btn"  id="check2">
-                            <label for="check2" class="form-check-label">2</label>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-lg-2 col-12"><strong>Date and Time</strong></label>
+                            <div class="col-sm-4 col-lg-2 col-6">
+                                <input type="text" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="col-sm-4 col-6 col-lg-2">
+                                <input type="text" class="form-control" placeholder="Time">
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="radio-btn"  id="check3">
-                            <label for="check3" class="form-check-label">3</label>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="radio-btn"  id="check4">
-                            <label for="check4" class="form-check-label">4</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="radio-btn"  id="check5">
-                            <label for="check5" class="form-check-label">5</label>
-                        </div>
-                        <div class="form-check disabled form-check-inline">
-                            <input type="radio" class="form-check-input" name="radio-btn"  id="check6">
-                            <label for="check6" class="form-check-label">6</label>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-lg-2 col-12"><strong>Date and Time</strong></label>
-                        <div class="col-sm-4 col-lg-2 col-6"  >
-                            <input type="text" class="form-control" placeholder="Date">
-                        </div>
-                        <div class="col-sm-4 col-6 col-lg-2">
-                            <input type="text" class="form-control" placeholder="Time">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">
-                                Reserve
-                            </button>
-                        </div>
-                    </div>
-                    </div>
-                    </form>
                 </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
     <footer class="footer">
         <div class="container">
@@ -167,17 +276,17 @@
                         <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
                         <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
                         <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-                     </address>
+                    </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
-                <div class="text-center">
-                    <a class="btn btn-social-icon btn-google href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-facebook href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-twitter href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-google href="#"><i class="fa fa-youtube fa-lg"></i></a>
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google href=" #"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook href=" #"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter href=" #"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin href=" #"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google href=" #"><i class="fa fa-youtube fa-lg"></i></a>
+                    </div>
                 </div>
-            </div>
 
             </div>
             <div class="row justify-content-center">
@@ -187,9 +296,15 @@
             </div>
         </div>
     </footer>
-      
+
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
+
 </html>
