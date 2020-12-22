@@ -87,3 +87,9 @@ background-color : #512da8;
 .carousel-caption{
     color : #dddddd;
 }
+#carouselButton
+{
+    right : 0px;
+    position: absolute;
+    bottom : 0px;
+}
