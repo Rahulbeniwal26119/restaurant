@@ -142,14 +142,9 @@
                     <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-                    <div class="btn-group" id="carouselButton">
-                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                        <button class="btn btn-danger btn-sm" id="carouselButton">
                             <span class="fa fa-pause"></span>
                         </button>
-                        <button class="btn btn-danger btn-sm" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -288,18 +283,18 @@
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a class="btn btn-social-icon btn-google href=" #"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook href=" #"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter href=" #"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin href=" #"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google href=" #"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google href=" href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook href=" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter href=" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin href=" href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google href=" href="#"><i class="fa fa-youtube fa-lg"></i></a>
                     </div>
                 </div>
 
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <p>Copyright 2015 jdhjhjdgjdjakdfjsklfjdk</p>
+                    <p>Copyright 2015 </p>
                 </div>
             </div>
         </div>
@@ -311,14 +306,22 @@
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
             $("#mycarousel").carousel({interval : 2000})
-            $("#carousel-pause").on("click" , ()=>{$("#mycarousel").carousel("pause")})
-            $("#carousel-play").on("click" , ()=>{
-                $("#mycarousel").carousel("cycle");
-            })
-            $("#bekar").on("click" , ()=>{
-                alert("bekar");
-            })
-        });
+            $("#carouselButton").on("click" , 
+            ()=>{
+                if($('#carouselButton').children('span').hasClass('fa-pause')){
+                    $("#mycarousel").carousel("pause")
+                    $("#carouselButton").children('span').removeClass('fa-pause');
+                    $("#carouselButton").children('span').addClass("fa-play");
+                }
+                else if($('#carouselButton').children('span').hasClass('fa-play')){
+                    $("#mycarousel").carousel("cycle")
+                    $("#carouselButton").children('span').removeClass('fa-play');
+                    $("#carouselButton").children('span').addClass("fa-pause");
+                }
+               })
+            $("#loginModal").click(function(){
+                $("#loginModal").modal('toggle');
+            });
     </script>
 </body>
 

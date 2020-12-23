@@ -92,4 +92,5 @@ background-color : #512da8;
     right : 0px;
     position: absolute;
     bottom : 0px;
+    z-index : 1;
 }
