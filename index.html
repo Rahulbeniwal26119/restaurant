@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ristorante Con Fusion</title>
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./index.css">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -25,8 +27,6 @@
                                 class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a href="./aboutus.html" class="nav-link"> <span
                                 class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> <span class="fa fa-list fa-lg"></span> Menu</a>
-                    </li>
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"> <span
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
@@ -299,6 +299,7 @@
             </div>
         </div>
     </footer>
+    <!-- build:js js/main.js -->
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -322,7 +323,9 @@
             $("#loginModal").click(function(){
                 $("#loginModal").modal('toggle');
             });
+        });
     </script>
+    <!-- endbuild -->
 </body>
 
 </html>
